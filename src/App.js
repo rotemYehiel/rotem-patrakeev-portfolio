@@ -42,7 +42,7 @@ const App = (props) => {
   return (
 
     <div className="App">
-      <Router history={history} basename='/rotem-patrakeev-portfolio'>
+      <Router history={history} >
         {developer ? (<div className="heder-in-app"><MainHeader developer={developer} isMenuOpen={isMenuOpen} /></div>) : ''}
         <div className="linksbar-wrapper">
           <LinksBar />
@@ -52,9 +52,9 @@ const App = (props) => {
         {isCvModalOpen ? <CvModal /> : ''}
         <AppBackground />
         <Routes>
-          <Route path="/" exact element={<Home developer={developer} />} />
-          <Route path="/About" exact element={<About />} />
-          <Route path='/Experience' exact element={<Experience />} />
+          <Route path="/rotem-patrakeev-portfolio" exact element={<Home developer={developer} />} />
+          <Route path="/rotem-patrakeev-portfolio/About" exact element={<About />} />
+          <Route path='/rotem-patrakeev-portfolio/Experience' exact element={<Experience />} />
           {/* <Route path="/Portfolio" exact element={<Portfolio />} /> */}
         </Routes>
       </Router>
