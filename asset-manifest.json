@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rotem-patrakeev-portfolio/static/css/main.9b55cb6f.css",
-    "main.js": "/rotem-patrakeev-portfolio/static/js/main.d71be2d4.js",
+    "main.css": "/rotem-patrakeev-portfolio/static/css/main.7b052a09.css",
+    "main.js": "/rotem-patrakeev-portfolio/static/js/main.0c2a4cdd.js",
     "static/js/787.d64bf138.chunk.js": "/rotem-patrakeev-portfolio/static/js/787.d64bf138.chunk.js",
     "static/media/Rotem Patrakeev-CV.docx": "/rotem-patrakeev-portfolio/static/media/Rotem Patrakeev-CV.4cc7f8c59684163c8c20.docx",
     "static/media/redux.png": "/rotem-patrakeev-portfolio/static/media/redux.df7d654653f8dca06c92.png",
@@ -14,12 +14,12 @@
     "static/media/bootstrap.png": "/rotem-patrakeev-portfolio/static/media/bootstrap.fd3cb129782ecd201164.png",
     "static/media/mongodb.png": "/rotem-patrakeev-portfolio/static/media/mongodb.940824112db2f1788f28.png",
     "index.html": "/rotem-patrakeev-portfolio/index.html",
-    "main.9b55cb6f.css.map": "/rotem-patrakeev-portfolio/static/css/main.9b55cb6f.css.map",
-    "main.d71be2d4.js.map": "/rotem-patrakeev-portfolio/static/js/main.d71be2d4.js.map",
+    "main.7b052a09.css.map": "/rotem-patrakeev-portfolio/static/css/main.7b052a09.css.map",
+    "main.0c2a4cdd.js.map": "/rotem-patrakeev-portfolio/static/js/main.0c2a4cdd.js.map",
     "787.d64bf138.chunk.js.map": "/rotem-patrakeev-portfolio/static/js/787.d64bf138.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b55cb6f.css",
-    "static/js/main.d71be2d4.js"
+    "static/css/main.7b052a09.css",
+    "static/js/main.0c2a4cdd.js"
   ]
 }
