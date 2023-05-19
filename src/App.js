@@ -18,7 +18,6 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import CvModal from './components/CvModal';
 import AppBackground from './components/AppBackground';
-import SentMessage from './components/SentMessage';
 import LinksBar from './components/LinksBar';
 import Experience from './pages/Experience';
 
@@ -27,7 +26,7 @@ library.add(fab)
 const history = createBrowserHistory();
 
 const App = (props) => {
-  const { developer, isMsgModalOpen, isCvModalOpen, isMenuOpen } = props
+  const { developer, isCvModalOpen, isMenuOpen } = props
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -48,7 +47,6 @@ const App = (props) => {
           <LinksBar />
         </div>
         {isCvModalOpen ? (<div className="screen" onClick={() => dispatch(toggalCvModal())}></div>) : ''}
-        {isMsgModalOpen ? <SentMessage /> : ''}
         {isCvModalOpen ? <CvModal /> : ''}
         <AppBackground />
         <Routes>
@@ -64,7 +62,6 @@ const App = (props) => {
 const mapStateToProps = (state) => {
   return {
     developer: state.data.developerDetails,
-    isMsgModalOpen: state.mail.isMsgSent,
     isCvModalOpen: state.app.isCvModalOpen,
     isMenuOpen: state.app.isMenuOpen
   }
