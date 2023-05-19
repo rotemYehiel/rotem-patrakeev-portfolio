@@ -1,6 +1,6 @@
 const myDetails = require('../assets/files/myDetails.json');
 
-const getDeveloper = async () => {
+export default getDeveloper = async () => {
     try {
         const dataToSend = myDetails;
         return dataToSend
@@ -9,9 +9,7 @@ const getDeveloper = async () => {
         throw err;
     }
 }
-module.exports = {
-    getDeveloper
-}
+
 
 // import axios from 'axios';
 // const baseUrl = (process.env.NODE_ENV !== 'development') ?
