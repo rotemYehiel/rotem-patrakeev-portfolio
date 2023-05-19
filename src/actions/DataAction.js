@@ -1,4 +1,4 @@
-import DataService from '../services/DataService'
+import { DataService } from '../services/DataService'
 
 export function loadDeveloper() {
     return async dispatch => {
