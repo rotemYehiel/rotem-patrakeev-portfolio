@@ -24,7 +24,7 @@ import Experience from './pages/Experience';
 
 library.add(fab)
 
-// const history = createBrowserHistory();
+const history = createBrowserHistory();
 
 const App = (props) => {
   const { developer, isMsgModalOpen, isCvModalOpen, isMenuOpen } = props
@@ -42,22 +42,22 @@ const App = (props) => {
   return (
 
     <div className="App">
-      {/* <Router history={history}> */}
-      {developer ? (<div className="heder-in-app"><MainHeader developer={developer} isMenuOpen={isMenuOpen} /></div>) : ''}
-      <div className="linksbar-wrapper">
-        <LinksBar />
-      </div>
-      {isCvModalOpen ? (<div className="screen" onClick={() => dispatch(toggalCvModal())}></div>) : ''}
-      {isMsgModalOpen ? <SentMessage /> : ''}
-      {isCvModalOpen ? <CvModal /> : ''}
-      <AppBackground />
-      <Routes>
-        <Route path="/" exact element={<Home developer={developer} />} />
-        <Route path="/About" exact element={<About />} />
-        <Route path='/Experience' exact element={<Experience />} />
-        {/* <Route path="/Portfolio" exact element={<Portfolio />} /> */}
-      </Routes>
-      {/* </Router> */}
+      <Router history={history}>
+        {developer ? (<div className="heder-in-app"><MainHeader developer={developer} isMenuOpen={isMenuOpen} /></div>) : ''}
+        <div className="linksbar-wrapper">
+          <LinksBar />
+        </div>
+        {isCvModalOpen ? (<div className="screen" onClick={() => dispatch(toggalCvModal())}></div>) : ''}
+        {isMsgModalOpen ? <SentMessage /> : ''}
+        {isCvModalOpen ? <CvModal /> : ''}
+        <AppBackground />
+        <Routes>
+          <Route path="/" exact element={<Home developer={developer} />} />
+          <Route path="/About" exact element={<About />} />
+          <Route path='/Experience' exact element={<Experience />} />
+          {/* <Route path="/Portfolio" exact element={<Portfolio />} /> */}
+        </Routes>
+      </Router>
     </div>
   );
 }
