@@ -1,0 +1,100 @@
+                * {
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    margin: 0;
+                    overflow-y: hidden;
+                    overflow-x: hidden;
+                    background-color: $clr1;
+                    color: $clr4;
+                    font-size: 16px;
+                    font-family: CONSOLA, sans-serif;
+                }
+                
+                img {
+                    width: 100%;
+                }
+                
+                button {
+                    cursor: pointer;
+                }
+                
+                ////Fixed Elements 
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    cursor: pointer;
+                }
+                
+                input,
+                textarea {
+                    padding: 0.25rem;
+                    padding-left: 0.25rem;
+                    border-radius: 0.25rem;
+                    min-height: 4vh;
+                }
+                
+                textarea {
+                    resize: none;
+                }
+                
+                h1,
+                h2,
+                h3,
+                h4,
+                h5 {
+                    margin: 0;
+                    font-size: inherit;
+                    font-weight: normal;
+                }
+                
+                p {
+                    margin: 0;
+                    font-size: inherit;
+                }
+                
+                ul,
+                li {
+                    padding: 0;
+                    margin: 0;
+                }
+                
+                // *//special//*//
+                .buttons {
+                    color: $clr7;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border: 2px $clr7 solid;
+                    padding: 0.5rem;
+                    border-radius: 0.2rem;
+                    font-size: 1rem;
+                    &:hover {
+                        color: white !important;
+                        border: 2px white solid;
+                    }
+                }
+                
+                .icons-buttons {
+                    color: $clr4;
+                    background-color: transparent;
+                    border: none;
+                    &:hover {
+                        color: $clr7;
+                    }
+                }
+                
+                 ::-webkit-scrollbar {
+                    width: 0.5rem;
+                    height: auto;
+                }
+                
+                 ::-webkit-scrollbar-thumb {
+                    background: $clr4;
+                    border-radius: 1rem;
+                }
+                
+                 ::-webkit-scrollbar-track {
+                    background: $clr1;
+                    box-shadow: inset 0 0 2.5px 2px black;
+                    border-radius: 1rem;
+                }

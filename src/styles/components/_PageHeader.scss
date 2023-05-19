@@ -1,0 +1,20 @@
+.page-header {
+    padding-top: 1rem;
+    font-size: 3rem;
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 2px;
+    display: flex;
+    align-items: flex-start;
+    h2 {
+        padding-left: 2rem;
+        font-family: TurretRoad-Regular;
+        font-weight: bold;
+        // 
+        align-self: center;
+    }
+}
+
+@include for-mobile-layout {
+    .page-header {
+        font-size: 2rem;
+    }
+}

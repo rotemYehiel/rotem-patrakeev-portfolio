@@ -1,0 +1,113 @@
+{
+    "name": "Rotem Patrakeev",
+    "profession": "Front-end web developer",
+    "developerImg": "https://res.cloudinary.com/dpjz7lloq/image/upload/v1593510209/Rotem/WhatsApp_Image_2020-05-03_at_12.06.53_nf5vyq.jpg",
+    "about": {
+        "summary": "Passionate about solving daily challenges, with experience in the latest web technologies.",
+        "hobbies": [
+            "Baking, If you have a problem with dough, then you have a problem with me ...",
+            "Traveling, Especially in green and natural areas.",
+            "Create some creative Stuff."
+        ],
+        "skills": [
+            "Autodidact",
+            "Creative",
+            "Responsible",
+            "Independent"
+        ]
+    },
+    "projects": [{
+            "name": "Jukebox",
+            "description": "Creating and sharing music stations by using YouTube API's",
+            "link": "https://rotem-limor-kareene.herokuapp.com/",
+            "img": "https://res.cloudinary.com/dpjz7lloq/image/upload/v1593686330/for%20cv/jukebox_klwvxn.jpg",
+            "tags": ["Vue.js", "SASS", "Node.js", "MongoDB"]
+        },
+        {
+            "name": "Weather App",
+            "description": "Search for a weather forecast and create a list of favorite cities",
+            "link": "https://rotem-weather-app.herokuapp.com/",
+            "img": "https://res.cloudinary.com/dpjz7lloq/image/upload/v1618414518/for%20cv/weather-app_hphdxe.png",
+            "tags": ["React.js", "Redux", "SASS", "Bootstrap"]
+        },
+        {
+            "name": "Mis Bitcoin",
+            "description": "Bitcoin money transfer system for contacts, contact management and currency display against the dollar exchange rate",
+            "link": "https://rotemyehiel.github.io/mis-bitcoin/#/",
+            "img": "https://res.cloudinary.com/dpjz7lloq/image/upload/v1644091041/for%20cv/mis-bitcoin_ef7zvr.png",
+            "tags": ["React.js", "Redux", "SASS"]
+        }
+    ],
+    "experience": [{
+            "companyName": "Karma shopping",
+            "companyType": "startup",
+            "period": "2022-today",
+            "rule": "Frontend developer",
+            "description": "Develop an Extension and Web products of the company using mainly react and vanilla JS. Works as the developer on the Extension squad. writes unit tests by using Jest & JSDOM.",
+            "projects": [{
+                    "projectName": "Extension",
+                    "link": "https://chrome.google.com/webstore/detail/karma-online-shopping-but/emalgedpdlghbkikiaeocoblajamonoh"
+                },
+                {
+                    "projectName": "Web",
+                    "link": "https://www.karmanow.com"
+                }
+            ]
+
+        },
+        {
+            "companyName": "YIT",
+            "companyType": null,
+            "period": "2021-2022",
+            "rule": "Frontend developer",
+            "description": "Build desktop and responsive web apps using react, TypeScript and vanilla JS. In addition ,Responsible from end-to-end for a main product from development to deployment.",
+            "projects": [{
+                    "projectName": "Ynet",
+                    "link": "https://www.ynet.co.il"
+                },
+                {
+                    "projectName": "Ctech",
+                    "link": "https://www.calcalistech.com"
+                },
+                {
+                    "projectName": "Tamka",
+                    "link": "https://tamka-cms.com"
+                },
+                {
+                    "projectName": "Calcalist",
+                    "link": "https://www.calcalist.co.il"
+                },
+                {
+                    "projectName": "Vesty",
+                    "link": "https://www.vesty.co.il"
+                }
+            ]
+        },
+        {
+            "companyName": "Adworks Ltd",
+            "companyType": null,
+            "period": "2020-2021",
+            "rule": "Full stack developer",
+            "description": "Build a Next ,React, Node js apps from scratch such as: ecommerce app, scrapping app and chrome extension.",
+            "projects": []
+        },
+        {
+            "companyName": "Marmanet",
+            "companyType": null,
+            "period": "2019",
+            "rule": "Data Coordinator",
+            "description": "Comparison and concentration of data.",
+            "projects": []
+        },
+        {
+            "companyName": "N & J Industrial Food Machinery LTD",
+            "companyType": null,
+            "period": "2015-2019",
+            "rule": "Marketing & service",
+            "description": "Responsibility for the company's website- Editing HTML, and marketing the web using Google Ads and Google Analytics, making technical support and orders.",
+            "projects": []
+        }
+    ],
+    "email": "rotem8y@gmail.com",
+    "phone": "054-4594273"
+}

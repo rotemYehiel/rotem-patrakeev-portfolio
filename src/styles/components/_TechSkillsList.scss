@@ -1,0 +1,38 @@
+.tech-skills-list {
+    max-height: 100%;
+    margin: 0 auto;
+    border: solid 3px #ffffffad;
+    width: 83%;
+    background-color: #fff;
+    align-self: center;
+    overflow-x: hidden;
+    .tech-skills {
+        @include clean-list;
+        display: flex;
+        align-items: center;
+        animation: slide 10s ease-in-out infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+        li {
+            .skill-img {
+                margin: 0.5vw;
+                width: 10.5vw;
+                display: block;
+            }
+        }
+    }
+    @keyframes slide {
+        10% {
+            transform: translateX(0);
+        }
+        25%,
+        43% {
+            transform: translateX(-69vw);
+        }
+        55%,
+        76% {
+            transform: translateX(-103.5vw);
+        }
+    }
+}

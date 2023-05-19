@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    .nav-link {
+        font-size: 1.1vw;
+        margin-top: 1.5rem;
+        font-family: CONSOLA, sans-serif;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:hover {
+            color: $clr7;
+        }
+    }
+    button {
+        width: fit-content;
+    }
+}
+
+@include for-mobile-layout {
+    .navbar {
+        .nav-link {
+            font-size: 1rem;
+        }
+    }
+}

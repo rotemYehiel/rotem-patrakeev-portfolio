@@ -1,0 +1,19 @@
+.project-preview {
+    border: 2px solid $clr4;
+    border-radius: 0.2rem;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .project-header {
+        font-size: 2rem;
+    }
+    .img-wrapper {
+        width: 80%;
+    }
+}

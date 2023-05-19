@@ -1,0 +1,26 @@
+.link-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .link {
+        svg {
+            font-size: 1.8vw;
+            &:hover {
+                color: $clr7;
+            }
+        }
+    }
+    .cv-btn {
+        @include clear-button;
+    }
+}
+
+@include for-mobile-layout {
+    .link-bar {
+        .link {
+            svg {
+                font-size: 2rem;
+            }
+        }
+    }
+}

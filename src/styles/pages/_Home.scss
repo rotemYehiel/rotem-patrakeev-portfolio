@@ -1,0 +1,47 @@
+.home {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    h1 {
+        padding-left: 15%;
+        font-family: TurretRoad-Regular;
+        font-weight: 800;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px;
+        font-size: 6vw;
+    }
+    h2 {
+        margin-left: 30%;
+        font-family: CONSOLA, sans-serif;
+        font-weight: 800;
+        display: flex;
+        align-items: flex-start;
+        color: $clr7;
+        font-size: 4vw;
+    }
+    .text-typing {
+        width: fit-content;
+    }
+    .text-typing h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 2s steps(22, end) forwards, blink 1s infinite;
+    }
+    @keyframes typing {
+        0% {
+            width: 0%
+        }
+        100% {
+            width: 100%
+        }
+    }
+    @keyframes blink {
+        0%,
+        100% {
+            border-right: 0.2vw solid transparent;
+        }
+        50% {
+            border-right: 0.2vw solid $clr7;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+/* Media queries Breakpoint mixins */
+
+@mixin for-smaller-mobile-layout {
+    @media (max-width: $break-smaller-mobile) {
+        @content;
+    }
+}
+
+@mixin for-mobile-layout {
+    @media (max-width: $break-mobile) {
+        @content;
+    }
+}
+
+@mixin for-narrow-layout {
+    @media (max-width: $break-narrow) {
+        @content;
+    }
+}
+
+@mixin for-wide-layout {
+    @media (max-width: $break-wide) {
+        @content;
+    }
+}
+
+
+/* Media  Mixins */
+
+//aspect ratio mixin
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+    >* {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    >img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Mixin for removing hover efects on iphone screen
+@mixin hover-supported {
+    @media not all and (pointer: coarse) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+
+/* Helper Mixins */
+
+@mixin clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin clear-button {
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+
+/* Design Fixed Elements Mixins */
+
+@mixin scrollbsr-design {
+    // overflow-y: scroll;
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar {
+        width: 12px;
+        background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px #d7d8d8;
+        background-color: #606063;
+    }
+}

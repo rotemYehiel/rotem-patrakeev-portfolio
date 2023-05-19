@@ -1,0 +1,218 @@
+    /* SETUP*/
+    
+    @import './styles/setup/typography';
+    @import './styles/setup/variables';
+    @import './styles/setup/mixins';
+    @import './styles/setup/functions';
+    /* BASICS*/
+    
+    @import './styles/basics/base';
+    /* PAGES */
+    
+    @import './styles/pages/Experience';
+    @import './styles/pages/About';
+    @import './styles/pages/Portfolio';
+    @import './styles/pages/Home';
+    /* CMPS */
+    
+    @import './styles/components/_Navbar.scss';
+    @import './styles/components/MainHeader';
+    @import './styles/components/PageHeader';
+    @import './styles/components/ProjectList';
+    @import './styles/components/ProjectPreview';
+    @import './styles/components/CvModal';
+    @import './styles/components/LinksBar';
+    @import './styles/components/TechSkillsList';
+    @import './styles/components/AppBackground';
+    @import './styles/components/SentMessage';
+    @import './styles/components/MenuBtn';
+    /* DEFAULTS */
+    
+    .App {
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 15vw 85vw;
+        grid-template-rows: 100vh;
+        position: relative;
+        .linksbar-wrapper {
+            display: none;
+        }
+        .screen {
+            cursor: pointer;
+            position: absolute;
+            z-index: 999;
+            --opacity: 0.5;
+            background-color: hsla(0, 0%, 0%, var(--opacity));
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .page-in-app {
+            margin: 10vh 0;
+            background-color: $clr6;
+            border: solid 3px #ffffffad;
+            animation: show .5s;
+            transform: scale(1);
+            width: 100%;
+            height: 50vh;
+            align-self: center;
+            z-index: 800;
+            .page-content {
+                padding: 1rem;
+            }
+        }
+        .info-page {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            height: 80vh;
+        }
+        .modal-header-text {
+            font-size: 2.4rem;
+        }
+        .modal-sub-title {
+            font-size: 1.5rem;
+        }
+        .open-modal {
+            animation: show .5s;
+            transform: scale(1);
+        }
+        .close-modal {
+            animation: close .5s;
+            transform: scale(1);
+        }
+        .modal {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            background-color: $clr2;
+            height: fit-content;
+            position: absolute;
+            z-index: 1000;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 0.2rem;
+            gap: 1rem;
+            padding: 2rem;
+        }
+        @keyframes show {
+            from {
+                transform: scale(0);
+                opacity: 0;
+                z-index: -1;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+                z-index: 2;
+            }
+        }
+        @keyframes close {
+            from {
+                transform: scale(1);
+                opacity: 1;
+                z-index: 2;
+            }
+            to {
+                transform: scale(0);
+                opacity: 0;
+                z-index: -1;
+            }
+        }
+        @include for-wide-layout {
+            max-width: $break-wide;
+        }
+        @include for-narrow-layout {
+            max-width: $break-narrow;
+            background-color: transparent;
+            grid-template-columns: 100vw;
+            grid-template-rows: 10vh 90vh;
+            gap: 2;
+            .page-in-app {
+                margin: 0;
+                height: inherit;
+                z-index: 100;
+                background-color: transparent;
+                border: unset;
+                &::-webkit-scrollbar {
+                    width: 0.5rem;
+                    height: auto;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: $clr7;
+                    border-radius: 1rem;
+                }
+                &::-webkit-scrollbar-track {
+                    background: $clr1;
+                    box-shadow: inset 0 0 2.5px 2px black;
+                    border-radius: 1rem;
+                }
+            }
+            .heder-in-app {
+                z-index: 800;
+            }
+            .info-page {
+                display: grid;
+                grid-template-rows: 10% 90%;
+                height: 100%;
+            }
+        }
+        @include for-mobile-layout {
+            max-width: $break-mobile;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow-y: visible;
+            .page-in-app {
+                margin-top: 10vh;
+                margin-bottom: 9vh;
+                height: 81vh;
+                background-color: transparent;
+                overflow-y: auto;
+                border: unset;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                .page-content {
+                    padding: 2rem;
+                }
+            }
+            .info-page {
+                grid-template-rows: 10% 1fr;
+            }
+            .heder-in-app {
+                position: fixed;
+                width: 100%;
+                height: 10vh;
+            }
+            .linksbar-wrapper {
+                display: flex;
+                align-items: center;
+                position: fixed;
+                width: 100vw;
+                height: 9vh;
+                bottom: 0;
+                background-color: $clr2;
+                z-index: 700;
+                padding: 1rem;
+                border-top: solid 1px #ffffffad;
+                border-right: solid 1px #ffffffad;
+                border-left: solid 1px #ffffffad;
+            }
+            .open-modal {
+                top: 50;
+            }
+            .modal {
+                width: 100%;
+            }
+        }
+        @include for-smaller-mobile-layout {
+            max-width: $break-smaller-mobile;
+        }
+    }

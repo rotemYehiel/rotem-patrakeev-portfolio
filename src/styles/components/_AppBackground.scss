@@ -1,0 +1,43 @@
+.app-background {
+    position: absolute;
+    height: 100vh;
+    width: 85vw;
+    right: 0;
+    overflow: hidden;
+    .icon {
+        position: absolute;
+        font-size: 20vw;
+        color: #ffffffcf;
+        bottom: -100vh;
+        transform-style: preserve-3d;
+    }
+    $total: 10;
+    @for $i from 1 through $total {
+        $scale: random(2) - .4;
+        .icon:nth-child(#{$i}) {
+            left: random(120) * 1% - 20;
+            animation: raise#{$i} 6+random(15)+s linear infinite;
+            animation-delay: random(5) - 5 + s;
+            transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+            filter: blur($i - 6 + px);
+            @keyframes raise#{$i} {
+                to {
+                    bottom: 150vh;
+                    transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+                }
+            }
+        }
+    }
+}
+
+@include for-narrow-layout {
+    .app-background {
+        width: 100%;
+    }
+}
+
+@include for-mobile-layout {
+    .app-background {
+        height: 100%;
+    }
+}

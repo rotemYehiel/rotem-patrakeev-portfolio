@@ -1,0 +1,119 @@
+        .project-list {
+            list-style-type: none;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            max-height: 100%;
+            overflow-y: auto;
+            .list-item {
+                position: relative;
+                cursor: pointer;
+                .screen {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    z-index: 999;
+                    background-color: rgba(255, 255, 255, 0);
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    text-align: center;
+                    .project-description {
+                        display: block;
+                        font-size: 1.2rem;
+                        padding: 0.5rem;
+                        opacity: 0;
+                    }
+                    .tags-wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .tag {
+                            opacity: 0;
+                            color: $clr7;
+                            background-color: $clr2;
+                            border: 2px $clr7 solid;
+                            padding: 0.5rem;
+                            margin: 0.5rem;
+                            border-radius: 0.2rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                &:hover {
+                    .screen {
+                        position: absolute;
+                        z-index: 999;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        backdrop-filter: blur(2px);
+                        display: flex;
+                        justify-content: center;
+                        .project-description {
+                            display: block;
+                            opacity: 1;
+                        }
+                        .tags-wrapper {
+                            .tag {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        @include for-mobile-layout {
+            .project-list {
+                grid-template-rows: unset;
+                grid-template-columns: unset;
+                padding: 0;
+                overflow-y: unset;
+                .list-item {
+                    .project-preview {
+                        max-height: 100%;
+                        .img-wrapper {
+                            height: fit-content;
+                        }
+                    }
+                    .screen {
+                        position: absolute;
+                        z-index: 999;
+                        width: 100%;
+                        left: 0;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        top: unset;
+                        bottom: 0;
+                        height: 50%;
+                        .project-description {
+                            display: none;
+                        }
+                        .tags-wrapper {
+                            .tag {
+                                opacity: 1;
+                                color: $clr4;
+                                background-color: #866f8673;
+                                font-size: 4vw;
+                                border: unset;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .screen {
+                            background-color: transparent;
+                            backdrop-filter: blur(0px);
+                            .project-description {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }

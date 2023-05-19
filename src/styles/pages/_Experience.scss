@@ -1,0 +1,208 @@
+    .experience {
+        .experience-content {
+            .wrapper {
+                position: relative;
+                height: 100%;
+                .timeline {
+                    max-width: 100%;
+                    margin: 0px auto;
+                    overflow-y: auto;
+                    max-height: 100%;
+                    .container {
+                        padding: 0.625rem 3.125rem;
+                        position: relative;
+                        width: 50%;
+                        animation: movedown 1s linear forwards;
+                        opacity: 0;
+                        .text-box {
+                            padding: 1.25rem 1.875rem;
+                            background-color: $clr1;
+                            position: relative;
+                            border-radius: 0.2rem;
+                            font-size: 1rem;
+                            margin: 0 1.25rem;
+                            h2 {
+                                font-weight: 600;
+                                font-size: 1rem;
+                            }
+                            small {
+                                display: inline-block;
+                                margin-bottom: 15px;
+                            }
+                            .projects {
+                                @include clean-list;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: flex-start;
+                                gap: 0.5rem;
+                                margin: 0.5rem 0;
+                            }
+                            .left-container-arrow {
+                                height: 0;
+                                width: 0;
+                                position: absolute;
+                                top: 28px;
+                                z-index: 1;
+                                border-top: 15px solid transparent;
+                                border-bottom: 15px solid transparent;
+                                border-left: 15px solid $clr1;
+                                right: -15px;
+                            }
+                            .right-container-arrow {
+                                height: 0;
+                                width: 0;
+                                position: absolute;
+                                top: 28px;
+                                z-index: 1;
+                                border-top: 15px solid transparent;
+                                border-bottom: 15px solid transparent;
+                                border-right: 15px solid $clr1;
+                                left: -15px;
+                            }
+                        }
+                        &.left-container {
+                            left: 0;
+                        }
+                        &.right-container {
+                            left: 50%;
+                            img {
+                                left: -20px;
+                            }
+                        }
+                        img {
+                            position: absolute;
+                            width: 40px;
+                            border-radius: 50%;
+                            right: -20px;
+                            top: 32px;
+                            z-index: 10;
+                        }
+                    }
+                    @keyframes movedown {
+                        0% {
+                            opacity: 1;
+                            transform: translateY(-30px);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+                    }
+                    .container:nth-child(1) {
+                        animation-delay: 0s;
+                    }
+                    .container:nth-child(2) {
+                        animation-delay: 1s;
+                    }
+                    .container:nth-child(3) {
+                        animation-delay: 2s;
+                    }
+                    .container:nth-child(4) {
+                        animation-delay: 3s;
+                    }
+                    .container:nth-child(5) {
+                        animation-delay: 4s;
+                    }
+                    .container:nth-child(6) {
+                        animation-delay: 5s;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 6px;
+                        height: 100%;
+                        background-color: white;
+                        top: 0;
+                        left: 50%;
+                        margin-left: -3px;
+                        z-index: -1;
+                        animation: moveline 6s linear forwards;
+                    }
+                    @keyframes moveline {
+                        0% {
+                            height: 0;
+                        }
+                        100% {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @include for-wide-layout {
+        .experience {
+            .experience-content {
+                .wrapper {
+                    .timeline {
+                        .container {
+                            padding: 0.625rem 1.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @include for-narrow-layout {
+        .experience {
+            .experience-content {
+                height: 100%;
+                max-width: 100vw;
+                .wrapper {
+                    .timeline {
+                        .container {
+                            width: 100%;
+                            padding: 10px 0 10px 40px;
+                            &.left-comtainer {
+                                left: 0;
+                            }
+                            &.right-container {
+                                left: 0;
+                                img {
+                                    left: 0;
+                                }
+                            }
+                            img {
+                                left: 0;
+                                right: unset;
+                            }
+                            .text-box {
+                                background-color: $clr2;
+                                .right-container-arrow {
+                                    border-right: 15px solid $clr2;
+                                }
+                                .left-container-arrow {
+                                    border-left: unset;
+                                    border-right: 15px solid $clr2;
+                                    left: -15px;
+                                    right: unset;
+                                }
+                            }
+                        }
+                        &:after {
+                            left: 20px;
+                            margin-left: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @include for-mobile-layout {
+        .experience {
+            .experience-content {
+                .wrapper {
+                    .timeline {
+                        .container {
+                            .text-box {
+                                margin: 0 0 0 1.25rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
