@@ -42,7 +42,7 @@ const App = (props) => {
   return (
 
     <div className="App">
-      <Router history={history}>
+      <Router history={history} basename='/rotem-patrakeev-portfolio'>
         {developer ? (<div className="heder-in-app"><MainHeader developer={developer} isMenuOpen={isMenuOpen} /></div>) : ''}
         <div className="linksbar-wrapper">
           <LinksBar />
