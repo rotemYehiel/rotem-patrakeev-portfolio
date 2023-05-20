@@ -50,9 +50,9 @@ const App = (props) => {
         {isCvModalOpen ? <CvModal /> : ''}
         <AppBackground />
         <Routes>
-          <Route path="/" exact element={<Home developer={developer} />} />
-          <Route path="/About" exact element={<About />} />
-          <Route path='/Experience' exact element={<Experience />} />
+          <Route path="/rotem-patrakeev-portfolio" exact element={<Home developer={developer} />} />
+          <Route path="/rotem-patrakeev-portfolio/About" exact element={<About />} />
+          <Route path='/rotem-patrakeev-portfolio/Experience' exact element={<Experience />} />
           {/* <Route path="/Portfolio" exact element={<Portfolio />} /> */}
         </Routes>
       </Router>
