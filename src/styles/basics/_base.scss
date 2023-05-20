@@ -98,3 +98,17 @@
                     box-shadow: inset 0 0 2.5px 2px black;
                     border-radius: 1rem;
                 }
+                
+                @include for-mobile-layout {
+                    .buttons {
+                        &:hover {
+                            color: $clr7 !important;
+                            border: 2px $clr7 solid;
+                        }
+                    }
+                    .icons-buttons {
+                        &:hover {
+                            color: inherit;
+                        }
+                    }
+                }

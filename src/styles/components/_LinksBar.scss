@@ -20,6 +20,9 @@
         .link {
             svg {
                 font-size: 2rem;
+                &:hover {
+                    color: inherit !important;
+                }
             }
         }
     }

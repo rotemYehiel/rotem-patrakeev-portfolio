@@ -36,3 +36,13 @@
         }
     }
 }
+
+@include for-mobile-layout {
+    .tech-skills-list {
+        .tech-skills {
+            &:hover {
+                animation-play-state: inherit;
+            }
+        }
+    }
+}
