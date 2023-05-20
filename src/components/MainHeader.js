@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import LinksBar from './LinksBar';
 import MenuBtn from './MenuBtn';
@@ -11,7 +12,7 @@ const MainHeader = (props) => {
 
             <div className="header-narrow">
                 <MenuBtn />
-                <h1 className="dev-name">{developer.name}</h1>
+                <Link className="dev-name" to="/rotem-patrakeev-portfolio" >{developer.name}</Link>
             </div>
 
             <div className={`menu ` + (isMenuOpen ? 'show-menu' : 'close-menu')} >
