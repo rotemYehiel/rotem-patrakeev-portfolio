@@ -37,7 +37,6 @@ const App = (props) => {
     getUser();
   }, [props, dispatch])
 
-  console.log(developer);
   return (
 
     <div className="App">

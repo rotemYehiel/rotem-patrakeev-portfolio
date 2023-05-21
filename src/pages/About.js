@@ -27,8 +27,8 @@ const About = () => {
                         <div className="summary" style={{ marginLeft: `${2 * (aboutDeveloper.skills.length + 1)}vw` }}>
                             <h2 >Hi I'm Rotem Patreakeev</h2>
                             <p>I'm a Fullstack Web Developer, Passionate about solving
-                            daily challenges, in development , math or just a regolar board game.
-                        </p>
+                                daily challenges, in development , math or just a regolar board game.
+                            </p>
                             <br />
                             <p className="skill-tag">{`<ul>`}<span className="text">Hobbies:</span></p>
                             <ul className="hobbies-list">
@@ -42,7 +42,7 @@ const About = () => {
                         </div>
 
 
-                        {aboutDeveloper.skills.reverse().map((skill, index) => (
+                        {aboutDeveloper.skills.map((skill, index) => (
                             <p key={index} className="skill-tag" style={{ textIndent: `${(2 * (aboutDeveloper.skills.length - index))}vw` }}>{`</${skill}>`}</p>
                         ))}
                     </section>
