@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/rotem-patrakeev-portfolio/static/css/main.7b7f759d.css",
-    "main.js": "/rotem-patrakeev-portfolio/static/js/main.369f24eb.js",
+    "main.css": "/rotem-patrakeev-portfolio/static/css/main.2a7abc73.css",
+    "main.js": "/rotem-patrakeev-portfolio/static/js/main.5c45cf69.js",
     "static/js/787.d64bf138.chunk.js": "/rotem-patrakeev-portfolio/static/js/787.d64bf138.chunk.js",
-    "static/media/Rotem Patrakeev-CV.docx": "/rotem-patrakeev-portfolio/static/media/Rotem Patrakeev-CV.c0a3868cd303eec7d602.docx",
+    "static/media/Rotem Patrakeev-CV.docx": "/rotem-patrakeev-portfolio/static/media/Rotem Patrakeev-CV.fdd6789ac3dc39443e71.docx",
     "static/media/redux.png": "/rotem-patrakeev-portfolio/static/media/redux.df7d654653f8dca06c92.png",
     "static/media/npm.png": "/rotem-patrakeev-portfolio/static/media/npm.1b93df60e4ef3df08b41.png",
-    "static/media/Rotem Patrakeev-CV.pdf": "/rotem-patrakeev-portfolio/static/media/Rotem Patrakeev-CV.f1a7e242ffcf00ec32bf.pdf",
+    "static/media/Rotem Patrakeev-CV.pdf": "/rotem-patrakeev-portfolio/static/media/Rotem Patrakeev-CV.a117237f861cee6dd911.pdf",
     "static/media/CONSOLA.TTF": "/rotem-patrakeev-portfolio/static/media/CONSOLA.cd87e6528d4667aa9465.TTF",
     "static/media/TurretRoad-Regular.ttf": "/rotem-patrakeev-portfolio/static/media/TurretRoad-Regular.b619cef6d095c40499e7.ttf",
     "static/media/next.png": "/rotem-patrakeev-portfolio/static/media/next.a725f5cb51998c30c03a.png",
@@ -14,12 +14,12 @@
     "static/media/bootstrap.png": "/rotem-patrakeev-portfolio/static/media/bootstrap.fd3cb129782ecd201164.png",
     "static/media/mongodb.png": "/rotem-patrakeev-portfolio/static/media/mongodb.940824112db2f1788f28.png",
     "index.html": "/rotem-patrakeev-portfolio/index.html",
-    "main.7b7f759d.css.map": "/rotem-patrakeev-portfolio/static/css/main.7b7f759d.css.map",
-    "main.369f24eb.js.map": "/rotem-patrakeev-portfolio/static/js/main.369f24eb.js.map",
+    "main.2a7abc73.css.map": "/rotem-patrakeev-portfolio/static/css/main.2a7abc73.css.map",
+    "main.5c45cf69.js.map": "/rotem-patrakeev-portfolio/static/js/main.5c45cf69.js.map",
     "787.d64bf138.chunk.js.map": "/rotem-patrakeev-portfolio/static/js/787.d64bf138.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b7f759d.css",
-    "static/js/main.369f24eb.js"
+    "static/css/main.2a7abc73.css",
+    "static/js/main.5c45cf69.js"
   ]
 }
