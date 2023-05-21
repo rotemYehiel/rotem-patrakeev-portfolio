@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import PageHeader from '../components/PageHeader';
-import TechSkillsList from '../components/TechSkillsList';
-
 import KarmaShoppingIcon from '../assets/icons/karma_shopping_icon.jpeg'
 import YitIcon from '../assets/icons/yit_logo.jpeg'
 import AdworksIcon from '../assets/icons/adworks_ltd_icon.jpeg'
@@ -38,10 +36,10 @@ const Experience = () => {
                         <div className='timeline'>
                             {developerExperience.map((experience, index) => {
                                 const { companyName, companyType, period, rule, description, projects } = experience;
-                                const leftContainer = index % 2 == 0
+                                const leftContainer = index % 2 === 0
                                 return (
                                     <div className={`container ${leftContainer ? 'left-container' : 'right-container'}`} key={`experience-${index}`}>
-                                        <img src={iconsByCompany[companyName]} />
+                                        <img src={iconsByCompany[companyName]} alt={companyName} />
                                         <div className="text-box">
                                             <h2>{companyName} {companyType ? `(${companyType})` : ''}- {rule}</h2>
                                             <small>{period}</small>

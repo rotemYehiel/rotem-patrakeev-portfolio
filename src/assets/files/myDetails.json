@@ -43,7 +43,7 @@
             "companyType": "startup",
             "period": "2022-today",
             "rule": "Frontend developer",
-            "description": "Develop an Extension and Web products of the company using mainly react and vanilla JS. Works as the developer on the Extension squad. writes unit tests by using Jest & JSDOM.",
+            "description": "Developing and enhancing our main web application using ReactJS and vanilla JavaScript, with expertise in creating responsive designs using flexbox. Developed web extensions and website integrated into the main product.",
             "projects": [{
                     "projectName": "Extension",
                     "link": "https://chrome.google.com/webstore/detail/karma-online-shopping-but/emalgedpdlghbkikiaeocoblajamonoh"
