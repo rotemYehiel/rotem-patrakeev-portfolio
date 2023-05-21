@@ -34,18 +34,16 @@ const Experience = () => {
             <div className="experience page-in-app info-page">
                 <PageHeader pageName='Experience' />
                 <div className="page-content experience-content">
-                    {/* <div className="page-content"> */}
-
                     <div className='wrapper'>
                         <div className='timeline'>
                             {developerExperience.map((experience, index) => {
                                 const { companyName, companyType, period, rule, description, projects } = experience;
                                 const leftContainer = index % 2 == 0
                                 return (
-                                    <div className={`container ${leftContainer ? 'left-container' : 'right-container'}`}>
+                                    <div className={`container ${leftContainer ? 'left-container' : 'right-container'}`} key={`experience-${index}`}>
                                         <img src={iconsByCompany[companyName]} />
                                         <div className="text-box">
-                                            <h2>{companyName} {companyType ? `(${companyType}}` : ''}- {rule}</h2>
+                                            <h2>{companyName} {companyType ? `(${companyType})` : ''}- {rule}</h2>
                                             <small>{period}</small>
                                             <p>{description}</p>
                                             {projects.length > 0 && (
@@ -66,31 +64,6 @@ const Experience = () => {
                                         </div>
                                     </div>
                                 )
-
-                                // return (
-                                //     <div key={index}>
-                                //         {companyLink ?
-                                //             <a href={companyLink} target="_blank"><h2>{companyName} {companyType ? `(${companyType})` : ''}</h2></a>
-                                //             :
-                                //             <h2>{companyName} {companyType ? `(${companyType})` : ''}</h2>}
-
-                                //         <p>{period}</p>
-                                //         <p>{rule}</p>
-                                //         <p>{description}</p>
-                                //         {projects.length > 0 && (
-                                //             <ul>Projects I were participated:
-                                //                 {projects.map((project, index) => (
-                                //                     <li key={`${project.projectName}-${index}`}>
-                                //                         <h3>{project.projectName}</h3>
-                                //                         <a href={project.link} target='_blanck'>lets see</a>
-                                //                     </li>
-                                //                 )
-                                //                 )}
-                                //             </ul>
-                                //         )
-                                //         }
-                                //     </div>
-                                // )
                             })}
                         </div>
                     </div>
