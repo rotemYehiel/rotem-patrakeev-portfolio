@@ -5,7 +5,7 @@ const Home = () => {
         <div className="home page-in-app">
             <h1>Rotem Patrakeev</h1>
             <div className="text-typing">
-                <h2>{`<Front-end Web Developer/>`}</h2>
+                <h2>{`<Web Developer/>`}</h2>
             </div>
         </div>
     )
