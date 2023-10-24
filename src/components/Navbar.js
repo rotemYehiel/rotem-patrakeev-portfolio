@@ -9,7 +9,6 @@ const Navbar = ({ email }) => {
 
     return (
         <div className="navbar header-item">
-            <Link className="nav-link" to="/rotem-patrakeev-portfolio" onClick={() => dispatch(toggalMenu())}>Home</Link>
             <Link className="nav-link" to="/rotem-patrakeev-portfolio/About" onClick={() => dispatch(toggalMenu())}>About</Link>
             <Link className="nav-link" to="/rotem-patrakeev-portfolio/Experience" onClick={() => dispatch(toggalMenu())}>Experience</Link>
             {/* <Link className="nav-link" to="/Portfolio" onClick={() => dispatch(toggalMenu())}>Portfolio</Link> */}
