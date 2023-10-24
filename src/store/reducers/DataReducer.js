@@ -1,18 +1,18 @@
-const initialState = {
-    developerDetails: null,
-    isNavbarOpen: false,
+// const initialState = {
+//     developerDetails: null,
+//     isNavbarOpen: false,
 
-}
-export default function DataReducer(state = initialState, action) {
+// }
+// export default function DataReducer(state = initialState, action) {
 
-    switch (action.type) {
-        case 'SET_DEVELOPER':
-            return {
-                ...state,
-                developerDetails: action.developerDetails
-            }
+//     switch (action.type) {
+//         case 'SET_DEVELOPER':
+//             return {
+//                 ...state,
+//                 developerDetails: action.developerDetails
+//             }
 
-        default:
-            return state;
-    }
-}
+//         default:
+//             return state;
+//     }
+// }

@@ -11,7 +11,6 @@
         font-size: 6vw;
     }
     h2 {
-        margin-left: 30%;
         font-family: CONSOLA, sans-serif;
         font-weight: 800;
         display: flex;
@@ -21,11 +20,13 @@
     }
     .text-typing {
         width: fit-content;
+        padding-left: 15%;
     }
     .text-typing h2 {
         white-space: nowrap;
         overflow: hidden;
         animation: typing 2s steps(22, end) forwards, blink 1s infinite;
+        text-transform: capitalize;
     }
     @keyframes typing {
         0% {

@@ -2,11 +2,11 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from 'redux-thunk'
 
 import AppReducer from './reducers/AppReducer';
-import DataReducer from './reducers/DataReducer';
+// import DataReducer from './reducers/DataReducer';
 
 const store = createStore(combineReducers({
     app: AppReducer,
-    data: DataReducer,
+    // data: DataReducer,
 }), applyMiddleware(thunk));
 
 

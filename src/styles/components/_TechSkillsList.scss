@@ -39,6 +39,7 @@
 
 @include for-mobile-layout {
     .tech-skills-list {
+        margin: 2rem 0;
         .tech-skills {
             &:hover {
                 animation-play-state: inherit;
